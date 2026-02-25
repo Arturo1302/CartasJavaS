@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21 - Blackjack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+
+  <h1>♠ VEINTIUNO ♠</h1>
+  <p class="subtitle">Blackjack &middot; Jugador vs Croupier</p>
+
+  <div class="table">
+
+    <div class="zone-label">Croupier</div>
+    <div class="hand-area" id="dealer-hand"></div>
+    <div class="score-display" id="dealer-score"></div>
+
+    <hr>
+    <div id="result"></div>
+    <div id="status">Presiona "Nueva Partida" para comenzar</div>
+    <hr>
+
+    <div class="score-display" id="player-score"></div>
+    <div class="hand-area" id="player-hand"></div>
+    <div class="zone-label">Tu mano</div>
+
+    <div class="controls">
+      <button id="btn-new">Nueva Partida</button>
+      <button id="btn-hit" disabled>Pedir Carta</button>
+      <button id="btn-stand" disabled>Plantarse</button>
+    </div>
+
+  </div>
+
+  <script src="./scripts/script.js"></script>
 </body>
-<script src="./scripts/script.js"></script>
 </html>
